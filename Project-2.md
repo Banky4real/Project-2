@@ -37,4 +37,4 @@
 ### mysql successful login
 `sudo mysql -p`
 
-![sql-server-login-success](./Images/security-script.png)
+![sql-server-login-success](./Images/mysql-connection-success.png)
