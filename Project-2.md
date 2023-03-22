@@ -38,3 +38,7 @@
 `sudo mysql -p`
 
 ![sql-server-login-success](./Images/mysql-login-success.png)
+
+## **PHP Installation**
+`sudo apt install php-fpm php-mysql`
+![php-installation-success](./Images/php-Installation-success.png)
