@@ -21,3 +21,20 @@
 `http://<Public-IP-Address>:80`
 
 ![nginx-Internet-test](./Images/nginx-port80-activation.png)
+
+## **Mysql Installation**
+- `sudo apt install mysql-server`
+- `sudo mysql`
+
+![sql-server-installation-success](./Images/mysql-connection-success.png)
+
+### mysql security script 
+`sudo mysql_secure_installation`
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';`
+
+![sql-server-security-script](./Images/security-script.png)
+
+### mysql successful login
+`sudo mysql -p`
+
+![sql-server-login-success](./Images/security-script.png)
