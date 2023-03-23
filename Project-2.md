@@ -60,3 +60,8 @@
 `sudo nano /var/www/projectLEMP/info.php`
 
 ![info.php-site-test](./Images/php-test-with-nginx.png)
+
+### removing info.php file from root directory
+`sudo rm /var/www/projectLEMP/info.php`
+
+![info.php-site-test](./Images/removing-Info.php-from-directory.png)
