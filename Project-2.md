@@ -42,3 +42,21 @@
 ## **PHP Installation**
 `sudo apt install php-fpm php-mysql`
 ![php-installation-success](./Images/php-Installation-success.png)
+
+## **Configuring nginx to use php processor**
+- `sudo mkdir /var/www/projectLEMP`
+- `sudo chown -R $USER:$USER /var/www/projectLEMP`
+- `sudo nano /etc/nginx/sites-available/projectLEMP`
+- `sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
+![php-installation-success](./Images/successful-config-of-nginx.png)
+
+### mysql successful login
+`http://<Public-IP-Address>:80`
+
+![nginx-site-test](./Images/nginx-projectlemp-test-on-web.png)
+
+## **Testing php with nginx**
+### creating info.php test file in root directory
+`sudo nano /var/www/projectLEMP/info.php`
+
+![info.php-site-test](./Images/php-test-with-nginx.png)
