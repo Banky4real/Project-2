@@ -65,3 +65,42 @@
 `sudo rm /var/www/projectLEMP/info.php`
 
 ![info.php-site-test](./Images/removing-Info.php-from-directory.png)
+
+## **Accessing database content via PHP**
+### test database creation
+`CREATE DATABASE `test_database`;`
+
+![creating_test_database](./Images/database-creation.png)
+### test user creation with password
+`CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+
+![creating_user_and_password](./Images/user-creation.png)
+### Granting new user Priviledges
+`GRANT ALL ON example_database.* TO 'example_user'@'%';`
+
+![Granting_priviledges](./Images/assigning-full-priviledge.png)
+### new user Login
+`mysql -u example_user -p`
+
+![new_user_login](./Images/new-user-login.png)
+### created database verification
+`SHOW DATABASES;`
+
+![database_verification](./Images/database-created.png)
+
+### created database verification
+`SHOW DATABASES;`
+
+![database_verification](./Images/database-created.png)
+### to_do list table creation
+`CREATE TABLE test_database.todo_list ( item_id INT AUTO_INCREMENT, content VARCHAR(255), PRIMARY KEY(item_id) );`
+
+![database_verification](./Images/todo_list-table-creation.png)
+### populating to_do list table with values
+`INSERT INTO test_database.todo_list (content) VALUES ("First item goes here");`
+
+![populating_to-do_list](./Images/populating-database.png)
+### accessing database content via php on web
+`http://4.202.233.76/todo_list.php`
+
+![accessing_database_content_via_php](./Images/database-content-access-via-web.png)
